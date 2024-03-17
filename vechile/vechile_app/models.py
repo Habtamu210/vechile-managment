@@ -4,4 +4,4 @@ from django.db import models
 class Vechile(models.Model):
     plate_number = models.CharField(max_length=15, primary_key=True)
     type = models.CharField(max_length=50)
-    capacity = models.IntegerField()
+    capacity = models.PositiveBigIntegerField(default=0)
